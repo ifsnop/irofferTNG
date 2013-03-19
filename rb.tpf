@@ -1,0 +1,372 @@
+# 2003-07-09 01:25:18: logfile [rb.log]
+# 2003-07-09 01:25:18: user_login [ifsnopTS]
+# 2003-07-09 01:25:18: user_realname [dtorres]
+# 2003-07-09 01:25:18: user_nick [ifsnopTS]
+# 2003-07-09 01:25:18: user_modes [+i]
+# 2003-07-09 01:25:18: module_dir [./mod/]
+# 2003-07-09 01:25:18: mysql_host [localhost]
+# 2003-07-09 01:25:18: mysql_user [rb_user1]
+# 2003-07-09 01:25:18: mysql_pass [rb_pass1]
+# 2003-07-09 01:25:18: mysql_db [rb]
+# 2003-07-09 01:25:18: irc_host [irc.homelien.no]
+# 2003-07-09 01:25:18: irc_port [6667]
+# 2003-07-09 01:25:18: irc_channel 0/1:[#alsscan] N
+# 2003-07-09 01:25:18: -------------------------------------------
+  2003-07-09 01:25:18: module loading
+  2003-07-09 01:25:18: add module: [./mod/db.so]
+  2003-07-09 01:25:18: add module: [./mod/commands.so]
+  2003-07-09 01:25:18: add module: [./mod/nick.so]
+  2003-07-09 01:25:18: add module: [./mod/channel.so]
+# 2003-07-09 01:25:18: module channel.so loading
+· 2003-07-09 01:25:18: DELETE FROM irc_users
+· 2003-07-09 01:25:18: no connection to database
++ 2003-07-09 01:25:18: channel.so: couldn't reset irc_users
+# 2003-07-09 01:25:18: channel.so: RETRY
+# 2003-07-09 01:25:18: module nick.so loading
+# 2003-07-09 01:25:18: module commands.so loading
+# 2003-07-09 01:25:18: module db.so loading
+· 2003-07-09 01:25:18: SELECT COUNT(nick) FROM rb.users
+  2003-07-09 01:25:18: db.so: total users: 1
+· 2003-07-09 01:25:18: SELECT COUNT(crc) FROM rb.csvs
+  2003-07-09 01:25:18: db.so: total files: 13934
+# 2003-07-09 01:25:18: module channel.so loading
+· 2003-07-09 01:25:18: DELETE FROM irc_users
+# 2003-07-09 01:25:18: module loading finished
+  2003-07-09 01:25:18: rb started
+  2003-07-09 01:25:28: server connection established, logging in
+  2003-07-09 01:25:28: ourip = 10.0.0.1
+# 2003-07-09 01:25:28: <SND<: NICK ifsnopTS
+# 2003-07-09 01:25:28: <SND<: USER ifsnopTS 32 . :dtorres
+# 2003-07-09 01:25:28: <SND<: MODE ifsnopTS +i
+$ 2003-07-09 01:25:28: >RCV>: NOTICE AUTH :*** Looking up your hostname...
+$ 2003-07-09 01:25:28: >RCV>: NOTICE AUTH :*** Found your hostname, cached
+$ 2003-07-09 01:25:28: >RCV>: NOTICE AUTH :*** Checking Ident
+$ 2003-07-09 01:25:28: >RCV>: NOTICE AUTH :*** Got Ident response
+$ 2003-07-09 01:25:28: >RCV>: :irc.homelien.no 001 ifsnopTS :Welcome to the Internet Relay Network ifsnopTS
+$ 2003-07-09 01:25:28: >RCV>: :irc.homelien.no 002 ifsnopTS :Your host is irc.homelien.no[irc.homelien.no/6667], running version 2.8/hybrid-6.2
+$ 2003-07-09 01:25:28: >RCV>: NOTICE ifsnopTS :*** Your host is irc.homelien.no[irc.homelien.no/6667], running version 2.8/hybrid-6.2
+$ 2003-07-09 01:25:28: >RCV>: :irc.homelien.no 003 ifsnopTS :This server was created Sat Oct 6 2001 at 20:08:16 CEST
+$ 2003-07-09 01:25:28: >RCV>: :irc.homelien.no 004 ifsnopTS irc.homelien.no 2.8/hybrid-6.2 oOiwszcrkfydnxb biklmnopstve
+$ 2003-07-09 01:25:28: >RCV>: :irc.homelien.no 251 ifsnopTS :There are 6751 users and 110656 invisible on 62 servers
+$ 2003-07-09 01:25:28: >RCV>: :irc.homelien.no 252 ifsnopTS 476 :IRC Operators online
+$ 2003-07-09 01:25:28: >RCV>: :irc.homelien.no 254 ifsnopTS 44395 :channels formed
+$ 2003-07-09 01:25:28: >RCV>: :irc.homelien.no 255 ifsnopTS :I have 11213 clients and 2 servers
+$ 2003-07-09 01:25:28: >RCV>: :irc.homelien.no 265 ifsnopTS :Current local  users: 11213  Max: 12161
+$ 2003-07-09 01:25:28: >RCV>: :irc.homelien.no 266 ifsnopTS :Current global users: 117407  Max: 124261
+$ 2003-07-09 01:25:28: >RCV>: :irc.homelien.no 250 ifsnopTS :Highest connection count: 12163 (12161 clients) (75415 since server was (re)started)
+$ 2003-07-09 01:25:28: >RCV>: :irc.homelien.no 375 ifsnopTS :- irc.homelien.no Message of the Day - 
+$ 2003-07-09 01:25:28: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:28: >RCV>: :irc.homelien.no 372 ifsnopTS :- This is .irc.homelien.no. on .EFnet., the world's oldest living IRC
+$ 2003-07-09 01:25:28: >RCV>: :irc.homelien.no 372 ifsnopTS :- network.  The server you are connected to is one of the world's largest
+$ 2003-07-09 01:25:28: >RCV>: :irc.homelien.no 372 ifsnopTS :- IRC servers normally carrying several thousand simultaneous users.  No
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- flooding, linklooking, clones or spamming allowed.  Listen to the
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- IRCOPs!
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- We do not allow bots per se, but if your bot behaves properly and does
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- not bother anyone, chances are it will be left alone.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- IRC Administrator: Oystein Homelien (edison)
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :-         Operators: plan9 (co-admin), Takapa, FaceMan
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- Hvis du er norsk IRC-bruker og ny på IRC, /join kanal .#norge.!
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- Denne IRC-tjenesten drives i regi av .HOMELIEN CONSULTING., og står
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- sentralt plassert i internettleverandøren .POWERTECH. sitt nett (se
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- http://www.powertech.no/).  For priser eller mer informasjon om 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- landsomfattende, stabil og kostnadseffektiv tilgang til Internett:
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .http://www.powertech.no/priser/. eller ring telefon .23 010 030..
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .As of 2001-07-15 we now allow users from anywhere in the world, and.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .also users from somewhat misconfigured networks (unresolving hosts)..
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- The server has also been upgraded, so we should keep our position as the
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- largest, fastest and most user-friendly chat server. :)  Cheers!
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- Hvis du er .ny på IRC. eller har .spørsmål ang. treff. osv, join
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .#homelien. - den offisielle irc.homelien.no supportkanalen.  ./join
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- #homelien.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- ActiveIRC Update -- Monday Nov 26, 2001: ActiveIRC v0.25 released
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- URL: .http://www.activeirc.com/downloads/activeirc-025.exe.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- Linux: .http://www.activeirc.com/downloads/activeirc-0.25-1.i386.rpm.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 2001-12-05: We have now opened port .5190. for users having problems
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- getting connected due to firewalling.  Please let us know if this
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- helps. :)  --edison
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .2002-07-01: Two things, quite long this time.  Discuss..
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- First, you may have noticed that the irc.homelien.no staff count
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- is relatively small compared to our userbase.  This is a .strategy.,
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- not a flaw.  irc.homelien.no opers are a carefully selected bunch,
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- and that's why they are few of them.  Rest assured, .we work for.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .YOU., our user.  However, we are not uber-beings.  There are times
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- when there is no irc.homelien.no operator available.  During these
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- periods, our monitor bot operators keep things tidy.  If you need
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- help during these periods, doing a ./stats p. to find the currently
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- active monitor bot operators (from normon) is recommended.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- Second, .we get overwhelmed by requests to add special access for.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .LAN parties and small businesses running NAT. (for the
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- illiterate, if your IP address starts with 192.168. or 10., you are
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- probably running NAT -- and your personal freedom is severely
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- restricted). 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- Please understand; .our answer will always be NO..  It always has
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- been, and it always will be.  I will try to put this in simple
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- terms; NAT (Network Address Translation) and similar "technologies"
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- (masquerading, etc) are .detrimental to the Public Internet..
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- NAT .destroys the end-to-end transparency of the Internet..  If you
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- do not understand this or the ramifications of this, please .READ.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .UP ON IT. and make up your mind.  It is a short-term, detrimental
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- solution to a long-term problem which is most easily solved by
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- USING UP ALL AVAILABLE IPV4 ADDRESSES AS SOON AS POSSIBLE to force
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- a transition to IPv6.  
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .irc.homelien.no will never succumb to the incompetence of.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .consultants..  We do, however, realize that a number of our users
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- actually constitute part of the technician and consultant
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- community.  .If you want to give us something in return for.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .providing this service, increase your awareness of the above.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .issues..  Short and to the point. --edison, Øystein Homelien
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .NEWS 2002-08-06: .irc.ipv6.homelien.no is now running an .IPv6.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .(IP Version 6) test server..  Please contact us at .irc@homelien.no.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- if you have any problems connecting.  Spread the word.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .NEWS 2002-08-09.: .A good paper. which relates well to the issues in
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- the earlier .NAT. rant: .http://www.ietf.org/rfc/rfc2775.txt.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .2002-11-21: RETT PÅ NETT MED START.NO "RETT PÅ NETT" 21 40 50 20.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- Har du av og til .problemer. med din isdn- eller modemtilgang  til
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- Internett?  .IRC-brukere har nå fått et eget nummer. fra .start.no. som
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- kan brukes .uten brukernavn og passord., og med .både ISDN og modem..
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- Tjenesten støtter også STAC .komprimering., og .opptil 30 (!) isdn-.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .kanaler koblet sammen..   Hvis du ønsker å teste denne tjenesten
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- (som driftes av .PowerTech.) trenger du ikke gjøre annet enn å .endre.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .telefonnummeret. du ringer for å nå Internett.  .Ingen andre endringer.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .er nødvendige bortsett fra å endre nummeret du ringer..
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- Oppringt tilgang til Internett: tlf. .21 40 50 20.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- (støtter .både ISDN og modem., og er et .vanlig oslo-nummer.).
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .IRC.HOMELIEN.NO-TREFF I OSLO SOMMEREN 2003!.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- For ikke så alt for lenge siden pleide vi å arrangere .irc-treff.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- der man kom sammen for å spise, bli kjent, og/eller evt. dra på
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- byen.  Vi har fått signaler som tyder på at det er på tide å 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- dra i gang et treff snart!  Alle inviteres til .#homelien. for
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- å diskutere nærmere når og hvor og hvordan treffet skal være.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .Vi er spesielt interessert i innspill fra dere som ikke har.
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- .vært på irc-treff eller truffet så mange mennesker fra irc før..
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- Mer informasjon om treffet kommer når vi vet mer.  --edison
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 372 ifsnopTS :- 
+$ 2003-07-09 01:25:29: >RCV>: :irc.homelien.no 376 ifsnopTS :End of /MOTD command.
+$ 2003-07-09 01:25:29: >RCV>: :ifsnopTS MODE ifsnopTS :+i
+· 2003-07-09 01:25:38: DELETE FROM irc_users WHERE channelid = '0'
+# 2003-07-09 01:25:38: <QUE<: (1) JOIN #alsscan
+# 2003-07-09 01:25:39: <SND<: JOIN #alsscan
+$ 2003-07-09 01:25:39: >RCV>: :ifsnopTS!futuro@198.Red-217-127-201.pooles.rima-tde.net JOIN :#alsscan
+$ 2003-07-09 01:25:39: >RCV>: :irc.homelien.no 332 ifsnopTS #alsscan :.13Pserve v3.06. - .12http://www.photoserve.info .| .4CSVs .12http://csv.el-toro.org.
+$ 2003-07-09 01:25:39: >RCV>: :irc.homelien.no 333 ifsnopTS #alsscan Optika 1057701634
+$ 2003-07-09 01:25:39: >RCV>: :irc.homelien.no 353 ifsnopTS @ #alsscan :ifsnopTS +ifsnop +Robot2 +nir- +K-Meleon +Rapidler +demon93 +RAF +AlsKnight +exi +DenTikh +_sinner_ humper +PiCollect +Sanclas +LordSteve @Optika +ksauz +NoIdea +grzeszko +bulemba +Lucactus +starpc_2 +morti1 +SmoothSlt +Breuki +harry_73 +Qc-ZzZzZz +DPS` +ati_fr @Banesto +ecr33 +Mr_Mik @Goose` +OnlyMe__ @a-Bob`afk +Emp_Kuzco +specdude +mmaacc +lado +phuuchai +SandyD300 @Heechee +lok-tok-k +Who2 +watash @^kenny^ @StoneWall @Superworm @Flarn +nyqe @Ecks` @^Ender^ 
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'ifsnopTS', '0')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'ifsnop', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Robot2', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'nir-', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'K-Meleon', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Rapidler', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'demon93', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'RAF', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'AlsKnight', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'exi', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'DenTikh', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', '_sinner_', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'humper', '0')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'PiCollect', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Sanclas', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'LordSteve', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Optika', '1')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'ksauz', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'NoIdea', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'grzeszko', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'bulemba', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Lucactus', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'starpc_2', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'morti1', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'SmoothSlt', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Breuki', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'harry_73', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Qc-ZzZzZz', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'DPS`', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'ati_fr', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Banesto', '1')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'ecr33', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Mr_Mik', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Goose`', '1')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'OnlyMe__', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'a-Bob`afk', '1')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Emp_Kuzco', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'specdude', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'mmaacc', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'lado', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'phuuchai', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'SandyD300', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Heechee', '1')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'lok-tok-k', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Who2', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'watash', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', '^kenny^', '1')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'StoneWall', '1')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Superworm', '1')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Flarn', '1')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'nyqe', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Ecks`', '1')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', '^Ender^', '1')
+$ 2003-07-09 01:25:39: >RCV>: :irc.homelien.no 353 ifsnopTS @ #alsscan :@DartFrog @Phelsuma +Alties +Amanda +Syzygy +xr99_afk +galadhon +Axion +KronDorl +^PBUBot^ +valen @Ethanol +bukkinist +shawn8888 
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'DartFrog', '1')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Phelsuma', '1')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Alties', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Amanda', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Syzygy', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'xr99_afk', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'galadhon', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Axion', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'KronDorl', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', '^PBUBot^', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'valen', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'Ethanol', '1')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'bukkinist', '2')
+· 2003-07-09 01:25:39: INSERT INTO irc_users (channelid, user, mode) VALUES ('0', 'shawn8888', '2')
+$ 2003-07-09 01:25:39: >RCV>: :irc.homelien.no 366 ifsnopTS #alsscan :End of /NAMES list.
+$ 2003-07-09 01:25:40: >RCV>: :DartFrog!entropy@chaos.reins.irchost.net NOTICE ifsnopTS :DartFrog recognizes you as a verified trader.  Use .12/msg DartFrog !dart new. and .12/msg Heechee !gek new. for latest releases, and .12!info. for channel commands.
+$ 2003-07-09 01:25:41: >RCV>: :StoneWall!cruizer@always.lagging.net PRIVMSG ifsnopTS :.!PSVERSION.
+# 2003-07-09 01:25:41: >PRIVMSG (:StoneWall!cruizer@always.lagging.net PRIVMSG ifsnopTS :.!PSVERSION.) 2(PRIVMSG) 3(ifsnopTS) 4(:.!PSVERSION.) 5((null))
+$ 2003-07-09 01:25:41: >RCV>: :Superworm!superworm@super.worm.satexas.co.uk NOTICE ifsnopTS :There are unread news in #alsscan (3 unread, 30 total). ./msg Superworm news #alsscan read.
+$ 2003-07-09 01:25:43: >RCV>: :^Ender^!gecko@genocide.happyconversation.com MODE #alsscan +v ifsnopTS 
+· 2003-07-09 01:25:43: SELECT mode FROM irc_users WHERE channelid = '0' AND user = 'ifsnopTS'
+· 2003-07-09 01:25:43: UPDATE irc_users SET mode = '2' WHERE channelid = '0' AND user = 'ifsnopTS'
+$ 2003-07-09 01:25:43: >RCV>: :Heechee!gecko@blackhole.wildstar.net MODE #alsscan +v ifsnopTS 
+· 2003-07-09 01:25:43: SELECT mode FROM irc_users WHERE channelid = '0' AND user = 'ifsnopTS'
+· 2003-07-09 01:25:43: UPDATE irc_users SET mode = '2' WHERE channelid = '0' AND user = 'ifsnopTS'
+$ 2003-07-09 01:27:09: >RCV>: PING :irc.homelien.no
+  2003-07-09 01:27:09: server ping: PING :irc.homelien.no
+# 2003-07-09 01:27:09: <SND<: PONG :irc.homelien.no
+$ 2003-07-09 01:28:36: >RCV>: :ifsnop!futuro@198.Red-217-127-201.pooles.rima-tde.net PRIVMSG ifsnopts :RAW PRIVMSG #alsscan :!servinfo
+# 2003-07-09 01:28:36: >PRIVMSG (:ifsnop!futuro@198.Red-217-127-201.pooles.rima-tde.net PRIVMSG ifsnopts :RAW PRIVMSG #alsscan :!servinfo) 2(PRIVMSG) 3(ifsnopts) 4(:RAW) 5(PRIVMSG)
+# 2003-07-09 01:28:36: <QUE<: (1) PRIVMSG #alsscan :!servinfo
+# 2003-07-09 01:28:36: <SND<: PRIVMSG #alsscan :!servinfo
+$ 2003-07-09 01:28:36: >RCV>: :Qc-ZzZzZz!TheSims@ti100710a080-1679.bb.online.no 
+NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030628, ,!Qclove,256k/1.0m,9.4KB,.0532 KB/sec,109,45,154,41,0,2,4,0,2,10,0,0, ,
+NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!ifsnop,128k/256k,4.4KB,.0516 KB/sec,65,188,253,19,0,2,4,0,2,10,0,0, ,
+NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030628, ,!mac2,128k/1.5m,9.9KB,.138 KB/sec,81,473,554,16,0,1,3,0,2,10,0,0, ,
+$ 2003-07-09 01:28:37: >RCV>: :ecr33!ecr33@205-229-130-134-pppuser.bluebonnet.net NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.05.030518, ,!ecr33,33.6k/33.6k,0B,.054.2 KB/sec,104,6,110,3,0,2,4,0,2,10,0,1, ,
+$ 2003-07-09 01:28:37: >RCV>: :Who2!Who2@dsl027-176-006.sfo1.dsl.speakeasy.net NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!Who2,1.0m/1.0m,19.2KB,.05128 KB/sec,457,0,457,210,2,1,4,0,2,10,0,0, ,
+$ 2003-07-09 01:28:37: >RCV>: :demon93!~demon93@attwood.plus.com NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!demon93,256k/512k,10KB,.1316 KB/sec,96,116,212,58,0,1,4,0,2,10,0,0, Come get some,
+$ 2003-07-09 01:28:37: >RCV>: :KronDorl!~Spirit@CPE0010b5a6f8cd-CM014310115065.cpe.net.cable.rogers.com NOTICE ifsnopTS :.10Pserve Version:.07 3.04.021028  .10Trigger: .03!kd .10Speed:.07 128K/128K .10avg(.0415.1KB.10) .10Triggers:.03[.10 (.0331.10/.040.10/.1231.10) .10(.03ON.10/.04OFF.10/.12Total.10) .03] .10DCC:.03[ .10(Sends:.4 0.10/.072.10/.124 .10Queue:.4 0.10/.072.10/.1210.10) .10(.04Current.10/.07User.10/.12Max.10) .03] .10Message:.03 I's gots all ALS!!
+$ 2003-07-09 01:28:37: >RCV>: :NoIdea!NoIdea@p50838001.dip0.t-ipconnect.de NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!noidea,128k/768k,9.3KB,.1312.8 KB/sec,56,13,69,2,0,2,4,0,2,5,0,1,Who has www.inthecrack.com stuff?,
+$ 2003-07-09 01:28:37: >RCV>: :Syzygy!syzygy@syru72-079.syr.edu NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!syz,OC3/OC3,19.1KB,.0519440 KB/sec,23,134,157,4,0,1,5,0,2,10,0,0, ,
+$ 2003-07-09 01:28:37: >RCV>: :watash!watash@CPE-24-160-233-26.wi.rr.com NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030606,+b04,!wa,768k/1.0m,22.9KB,.0596 KB/sec,42,15,57,10,0,4,10,0,4,10,0,0, ok, whos' got the pics ??,
+$ 2003-07-09 01:28:37: >RCV>: :Goose`!goose@adsl-202-89-171-217.arach.net.au NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030622, ,!gs,128k/512k,3.5KB,.0516 KB/sec,86,103,189,20,0,1,4,0,2,10,0,0, If its in my trig list and you want it, ask me to load it,
+$ 2003-07-09 01:28:37: >RCV>: :morti1!morti@pD9E10401.dip.t-dialin.net NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!mo,128k/768k,4.9KB,.1315.2 KB/sec,21,11,32,13,0,1,4,0,2,10,0,0, ,
+$ 2003-07-09 01:28:37: >RCV>: :phuuchai!phuuchai@p50804569.dip0.t-ipconnect.de NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!phuuchai,128k/768k,2.1KB,.138 KB/sec,47,67,114,11,0,1,2,0,2,10,0,0, ,
+$ 2003-07-09 01:28:37: >RCV>: :Optika!optika@pc2-stap2-3-cust48.nott.cable.ntl.com NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!Optika,128k/512k,224B,.0516 KB/sec,95,1,96,51,0,2,4,0,2,10,1,1,AlsScan, Angels and a whole lot more.,
+$ 2003-07-09 01:28:37: >RCV>: :exi!exi@pD9E1E794.dip.t-dialin.net NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!exi,128k/768k,8.5KB,.0516 KB/sec,10,5,15,0,0,2,4,0,2,10,0,0, ,
+$ 2003-07-09 01:28:37: >RCV>: :Sanclas!~sancl@centro.neoline.com.br NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!sanclas,128k/128k,0B,.0516 KB/sec,14,0,14,1,0,2,4,0,2,10,0,0, ,
+$ 2003-07-09 01:28:37: >RCV>: :nyqe!Nyqe@D577F414.kabel.telenet.be NOTICE ifsnopTS :.0 Trig: !nq FServ: OFF Speed: T1 Sends:( 0 of 4 ) Gets: 0 .6Want older pix zips? Type the next command and replace 'mmddyy' with month,day,year numbers:      /ctcp nyqe !nq mmddyyals.zip
+$ 2003-07-09 01:28:37: >RCV>: :K-Meleon!kmel@p5086E180.dip0.t-ipconnect.de NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!kmel,128k/512k,9KB,.1312.8 KB/sec,47,74,121,8,0,2,4,0,2,10,1,1, ,
+$ 2003-07-09 01:28:38: >RCV>: :Breuki!Breuki@p50811AA6.dip.t-dialin.net NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!karin,128k/768k,2.5KB,.1314.4 KB/sec,301,1603,1904,79,0,2,4,0,2,10,0,0, ,
+$ 2003-07-09 01:28:38: >RCV>: :LordSteve!stevejj@CPE-65-29-22-22.mn.rr.com NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!lordsteve,384k/1.5m,15.8KB,.0548 KB/sec,292,0,292,84,0,2,4,0,2,10,0,0,Come and get some,
+$ 2003-07-09 01:28:38: >RCV>: :DenTikh!~dentikh@212.34.57.236 NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030606, ,!DenTikh,128k/256k,14.7KB,.1310.4 KB/sec,99,142,241,63,0,2,6,0,2,10,1,1, ,
+$ 2003-07-09 01:28:38: >RCV>: :lok-tok-k!~lok@bb-3e77c131.utfors.se NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.05.030518, ,!klo_,E1/E1,0B,.05256 KB/sec,28,0,28,1,0,2,4,0,2,10,0,0, ,
+$ 2003-07-09 01:28:38: >RCV>: :Mr_Mik!Mr_Mik@p5084B892.dip.t-dialin.net NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030622, ,!mik,128k/768k,7.3KB,.1313.6 KB/sec,112,723,835,17,0,1,2,0,2,10,0,0, ,
+$ 2003-07-09 01:28:38: >RCV>: :Amanda!replay@cpe-66-1-83-253.az.sprintbbd.net NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030628,+b05,!replay,128k/1.5m,5.5KB,.0516 KB/sec,165,599,764,116,1,2,3,0,2,10,1,2,Remember: "Be Aggressive",
+$ 2003-07-09 01:28:38: >RCV>: :Alties!Althotas@cpe-24-242-10-84.elp.rr.com NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030622, ,!Altho,1.5m/384k,15.7KB,.05192 KB/sec,183,370,553,84,0,1,10,0,2,15,0,0, ,
+$ 2003-07-09 01:28:38: >RCV>: :Ecks`!Ecks@CPE0006256f5572-CM.cpe.net.cable.rogers.com NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!ecks,192k/1.5m,6.5KB,.0524 KB/sec,145,569,714,89,0,1,3,0,2,10,0,0, ,
+$ 2003-07-09 01:28:38: >RCV>: :Lucactus!lucactus@224-119.dialup.alkar.net NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030622, ,!Lucactus,33.6k/33.6k,2.3KB,.054.2 KB/sec,35,80,115,8,0,2,4,0,2,10,0,0, ,
+$ 2003-07-09 01:28:38: >RCV>: :RAF!RAF@213.8.120.50 NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!RAF,1.5m/128k,6.8KB,.05192 KB/sec,14,4,18,3,0,2,4,0,2,10,0,0, ,
+$ 2003-07-09 01:28:38: >RCV>: :Axion!Axion_Nowh@dsl07527-dsl1.mtco.com NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518,+b05,!Axion,256k/256k,5.2KB,.0532 KB/sec,616,433,1049,503,1,1,2,0,5,10,0,0, ,
+$ 2003-07-09 01:28:38: >RCV>: :AlsKnight!~skliz@ip-193-93.cbr.ru NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030702, ,!als,256k/256k,12.3KB,.0532 KB/sec,147,168,315,92,2,2,4,0,2,10,0,0, ,
+$ 2003-07-09 01:28:38: >RCV>: :OnlyMe__!Arthur@p508D5722.dip.t-dialin.net NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030622, ,!OnlyMe,128k/768k,6KB,.1312.8 KB/sec,250,362,612,71,0,2,4,0,2,10,0,0,Come and get stuff..,
+$ 2003-07-09 01:28:38: >RCV>: :harry_73!harry@dial-206.cttc-ryazan.ru NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!harry,33.6k/33.6k,0B,.054.2 KB/sec,15,0,15,7,0,2,4,0,2,10,1,1, ,
+$ 2003-07-09 01:28:38: >RCV>: :PiCollect!Duke@pD950EB34.dip.t-dialin.net NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!PiCollect,128k/768k,0B,.0516 KB/sec,37,85,122,6,0,2,10,0,2,10,0,0, ,
+$ 2003-07-09 01:28:38: >RCV>: :ksauz!ksauz@ATuileries-111-1-3-208.w81-48.abo.wanadoo.fr NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030628, ,!ksauz,128k/512k,5.5KB,.0516 KB/sec,282,367,649,69,0,2,4,0,2,10,0,0, ,
+$ 2003-07-09 01:28:38: >RCV>: :Emp_Kuzco!Kuzco@pD9E833B6.dip.t-dialin.net NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!kuzco,128k/768k,6.7KB,.0516 KB/sec,261,83,344,98,1,2,4,0,2,10,3,3, ,
+$ 2003-07-09 01:28:38: >RCV>: :Heechee!gecko@blackhole.wildstar.net NOTICE ifsnopTS :dart2.21.tcl by Gecko -=- !gek find * for a files list
+$ 2003-07-09 01:28:38: >RCV>: :DPS`!~diveny@218.88.104.109 NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030613,+b03,!DPS,256k/1.0m,72KB,.0532 KB/sec,79,144,223,33,0,1,2,0,2,5,0,0,cannot connect LAN!,
+$ 2003-07-09 01:28:38: >RCV>: :SandyD300!Gandalf@adsl-68-88-77-133.dsl.rcsntx.swbell.net NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030628, ,!sando,256k/1.5m,9.8KB,.0532 KB/sec,87,89,176,33,0,1,2,0,2,5,0,0, ,
+$ 2003-07-09 01:28:38: >RCV>: :Robot2!Robot2@ad11-m14.net.hinet.hr NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030628, ,!robo,64k/64k,3.7KB,.058 KB/sec,450,105,555,22,0,1,4,0,2,10,0,0, ,
+$ 2003-07-09 01:28:39: >RCV>: :DartFrog!entropy@chaos.reins.irchost.net NOTICE ifsnopTS :dart2.21.tcl by Gecko -=- !dart find * for a files list
+$ 2003-07-09 01:28:39: >RCV>: :lado!lado@IP-233-91.TvNetWork.Hu NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030628, ,!lado,416k/512k,14.8KB,.0552 KB/sec,88,85,173,44,1,2,4,0,2,10,0,0, ,
+$ 2003-07-09 01:28:39: >RCV>: :Banesto!Banesto@62.84.145.81 NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030606, ,!ban2,T1/T1,33.4KB,.1396 KB/sec,20,31,51,7,0,1,4,0,2,5,0,0, ,
+$ 2003-07-09 01:28:39: >RCV>: :bukkinist!usr2@217.146.198.226 NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!bukkinist,128k/128k,6.7KB,.0516 KB/sec,49,1,50,5,0,2,4,0,2,10,0,0, ,
+$ 2003-07-09 01:28:39: >RCV>: :shawn8888!shawn8888@218.79.139.211 NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!shawn,512k/512k,5.7KB,.0564 KB/sec,45,149,194,15,0,4,10,0,4,10,0,0,Enjoy Leech!,
+$ 2003-07-09 01:28:39: >RCV>: :specdude!specdude@213.153.203.91 NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!spec,64k/64k,2.5KB,.058 KB/sec,27,21,48,13,0,2,4,0,2,10,0,2, ,
+$ 2003-07-09 01:28:39: >RCV>: :SmoothSlt!SmoothSlt@smooth.icehouse.net NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030628, ,!slits,128k/256k,5.8KB,.0516 KB/sec,204,38,242,167,2,2,4,0,2,10,0,0, ,
+$ 2003-07-09 01:28:39: >RCV>: :valen!~Valen_b4@MTL-HSE-ppp202810.qc.sympatico.ca NOTICE ifsnopTS :@Photoserve_!ServInfo,OFF,3.06.030706,+b05,!Valen_b4,384k/1.5m,3.2KB,.1343.2 KB/sec,482,970,1452,221,0,1,7,0,2,10,0,0,debugging ,
+$ 2003-07-09 01:28:40: >RCV>: :Rapidler!rapidler@M119P021.dipool.highway.telekom.at NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!SCR,64k/64k,5.2KB,.058 KB/sec,126,65,191,61,0,2,4,0,2,10,0,0, ,
+$ 2003-07-09 01:28:40: >RCV>: :galadhon!galadhon@BHE026021.res-com.wayinternet.com.br NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030628, ,!galadhon,128k/256k,7.2KB,.0516 KB/sec,265,802,1067,33,0,2,4,0,2,10,0,1, ,
+$ 2003-07-09 01:28:40: >RCV>: :ati_fr!atiati@ANeuilly-101-1-2-245.w193-251.abo.wanadoo.fr NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!ati,128k/512k,8.2KB,.0516 KB/sec,254,230,484,115,0,2,5,0,2,10,0,0, ,
+$ 2003-07-09 01:28:40: >RCV>: :starpc_2!starlance@isi-dsl-127-81.isis.de NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!star,128k/768k,5.7KB,.0516 KB/sec,75,6,81,22,0,1,8,0,2,10,0,0, ,
+$ 2003-07-09 01:28:41: >RCV>: :grzeszko!~grzeszko1@pb137.swiebodzice.sdi.tpnet.pl NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.05.030518, ,!grzeszko,128k/128k,5KB,.0516 KB/sec,14,60,74,2,0,2,4,0,2,10,0,0, ,
+$ 2003-07-09 01:28:43: >RCV>: :xr99_afk!Xray99@pcp03048217pcs.montvl01.pa.comcast.net NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030606, ,!xr,128k/256k,9.8KB,.138 KB/sec,317,366,683,128,0,1,2,0,2,5,2,2, ,
+$ 2003-07-09 01:28:44: >RCV>: :bulemba!~bulemba@el53-01-p25.ec.saix.net NOTICE ifsnopTS :.10Pserve Version:.07 3.01.020528  .10Trigger:.07 !bulemba .10Speed:.07 53.3K .10Triggers:.03[.10 (.034.10/.040.10/.124.10) .10(.03ON.10/.04OFF.10/.12Total.10) .03] .10DCC:.03[ .10(Sends:.4 0.10/.072.10/.124 .10Queue:.4 0.10/.072.10/.1210.10) .10(.04Current.10/.07User.10/.12Max.10) .03] .10Message:.07
+$ 2003-07-09 01:28:59: >RCV>: :a-Bob`afk!at0mic@c24.197.246.239.spt.wi.charter.com NOTICE ifsnopTS :@Photoserve_!ServInfo,ON,3.06.030518, ,!a-b,256k/384k,7.1KB,.0532 KB/sec,252,53,305,136,4,2,4,1,4,8,1,1,ALSSCAN f-machines0623.zip,
+$ 2003-07-09 01:29:00: >RCV>: :ksauz!ksauz@ATuileries-111-1-3-208.w81-48.abo.wanadoo.fr PRIVMSG #alsscan :!WhereIs F-MACHINES0623.ZIP
+$ 2003-07-09 01:29:12: >RCV>: :ifsnop!futuro@198.Red-217-127-201.pooles.rima-tde.net PRIVMSG ifsnopts :RAW PRIVMSG #alsscan :!whereis angelscd7
+# 2003-07-09 01:29:12: >PRIVMSG (:ifsnop!futuro@198.Red-217-127-201.pooles.rima-tde.net PRIVMSG ifsnopts :RAW PRIVMSG #alsscan :!whereis angelscd7) 2(PRIVMSG) 3(ifsnopts) 4(:RAW) 5(PRIVMSG)
+# 2003-07-09 01:29:12: <QUE<: (1) PRIVMSG #alsscan :!whereis angelscd7
+# 2003-07-09 01:29:13: <SND<: PRIVMSG #alsscan :!whereis angelscd7
+$ 2003-07-09 01:29:14: >RCV>: :ecr33!ecr33@205-229-130-134-pppuser.bluebonnet.net NOTICE ifsnopTS :I have.4 angelscd7 .with.12 971 .files, and it is .3ON .Config: RHC CSV: (.1379951600.3) ALS-CD07_1080.csv .[.10(.040B.10) .0333.6k/33.6k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !ecr33
+$ 2003-07-09 01:29:31: >RCV>: :ifsnop!futuro@198.Red-217-127-201.pooles.rima-tde.net PRIVMSG ifsnopts :RAW PRIVMSG #alsscan :!whereis angelscd5
+# 2003-07-09 01:29:31: >PRIVMSG (:ifsnop!futuro@198.Red-217-127-201.pooles.rima-tde.net PRIVMSG ifsnopts :RAW PRIVMSG #alsscan :!whereis angelscd5) 2(PRIVMSG) 3(ifsnopts) 4(:RAW) 5(PRIVMSG)
+# 2003-07-09 01:29:31: <QUE<: (1) PRIVMSG #alsscan :!whereis angelscd5
+# 2003-07-09 01:29:31: <SND<: PRIVMSG #alsscan :!whereis angelscd5
+$ 2003-07-09 01:29:32: >RCV>: :Qc-ZzZzZz!TheSims@ti100710a080-1679.bb.online.no NOTICE ifsnopTS :I have.4 angelscd5 .with.12 3364 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.049.4KB.10) .03256k/1.0m., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !Qclove
+$ 2003-07-09 01:29:32: >RCV>: :demon93!~demon93@attwood.plus.com NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.0410KB.10) .03256k/512k., .S:.040./.071./.124 .Q:.040./.072./.1210.] Trigger:.07 !demon93
+$ 2003-07-09 01:29:32: >RCV>: :ifsnop!futuro@198.Red-217-127-201.pooles.rima-tde.net NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2435 .files, and it is .3ON .Config: RHC CSV: (.136C86C297.3) ALS-Angels-CD05_2517.csv .[.10(.044.4KB.10) .03128k/256k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !ifsnop
+$ 2003-07-09 01:29:32: >RCV>: :Who2!Who2@dsl027-176-006.sfo1.dsl.speakeasy.net NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.0419.2KB.10) .031.0m/1.0m., .S:.042./.071./.124 .Q:.040./.072./.1210.] Trigger:.07 !Who2
+$ 2003-07-09 01:29:33: >RCV>: :ecr33!ecr33@205-229-130-134-pppuser.bluebonnet.net NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2956 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.040B.10) .0333.6k/33.6k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !ecr33
+$ 2003-07-09 01:29:33: >RCV>: :watash!watash@CPE-24-160-233-26.wi.rr.com NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.0422.9KB.10) .03768k/1.0m., .S:.040./.074./.1210 .Q:.040./.074./.1210.] Trigger:.07 !wa
+$ 2003-07-09 01:29:33: >RCV>: :Goose`!goose@adsl-202-89-171-217.arach.net.au NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCP CSV: (.1325DCA508.3) ALS-Angels-CD05(Pre-Final)_2954.csv .[.10(.043.5KB.10) .03128k/512k., .S:.040./.071./.124 .Q:.040./.072./.1210.] Trigger:.07 !gs
+$ 2003-07-09 01:29:33: >RCV>: :mmaacc!mmaacc@12-218-176-247.client.mchsi.com NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: HCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.049.9KB.10) .03128k/1.5m., .S:.040./.071./.123 .Q:.040./.072./.1210.] Trigger:.07 !mac2
+$ 2003-07-09 01:29:33: >RCV>: :Syzygy!syzygy@syru72-079.syr.edu NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2862 .files, and it is .3ON .Config: RHC CSV: (.13C2FA1FD3.3) ALS-Angels-CD05_2862.csv .[.10(.0419.1KB.10) .03OC3/OC3., .S:.040./.071./.125 .Q:.040./.072./.1210.] Trigger:.07 !syz
+$ 2003-07-09 01:29:33: >RCV>: :Sanclas!~sancl@centro.neoline.com.br NOTICE ifsnopTS :I have.4 angelscd5 .with.12 342 .files, and it is .3ON .Config: RHC CSV: (.1325DCA508.3) ALS-Angels-CD05_2954.csv .[.10(.040B.10) .03128k/128k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !sanclas
+$ 2003-07-09 01:29:33: >RCV>: :NoIdea!NoIdea@p50838001.dip0.t-ipconnect.de NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2225 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) Angels-CD05(Final)_2954.csv .[.10(.049.3KB.10) .03128k/768k., .S:.040./.072./.124 .Q:.040./.072./.125.] Trigger:.07 !noidea
+$ 2003-07-09 01:29:33: >RCV>: :phuuchai!phuuchai@p50804569.dip0.t-ipconnect.de NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.042.1KB.10) .03128k/768k., .S:.040./.071./.122 .Q:.040./.072./.1210.] Trigger:.07 !phuuchai
+$ 2003-07-09 01:29:33: >RCV>: :Optika!optika@pc2-stap2-3-cust48.nott.cable.ntl.com NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.04224B.10) .03128k/512k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !Optika
+$ 2003-07-09 01:29:33: >RCV>: :morti1!morti@pD9E10401.dip.t-dialin.net NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHC CSV: (.1325DCA508.3) ALS-Angels-CD05_2954.csv .[.10(.044.9KB.10) .03128k/768k., .S:.040./.071./.124 .Q:.040./.072./.1210.] Trigger:.07 !mo
+$ 2003-07-09 01:29:33: >RCV>: :exi!exi@pD9E1E794.dip.t-dialin.net NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2340 .files, and it is .3ON .Config: H CSV: (.13.3)  .[.10(.048.5KB.10) .03128k/768k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !exi
+$ 2003-07-09 01:29:33: >RCV>: :Alties!Althotas@cpe-24-242-10-84.elp.rr.com NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCP CSV: (.1325DCA508.3) ALS-Angels-CD05(Pre-Final)_2954.csv .[.10(.0415.7KB.10) .031.5m/384k., .S:.040./.071./.1210 .Q:.040./.072./.1215.] Trigger:.07 !Altho
+$ 2003-07-09 01:29:33: >RCV>: :Ecks`!Ecks@CPE0006256f5572-CM.cpe.net.cable.rogers.com NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.046.5KB.10) .03192k/1.5m., .S:.040./.071./.123 .Q:.040./.072./.1210.] Trigger:.07 !ecks
+$ 2003-07-09 01:29:33: >RCV>: :LordSteve!stevejj@CPE-65-29-22-22.mn.rr.com NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.0415.8KB.10) .03384k/1.5m., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !lordsteve
+$ 2003-07-09 01:29:33: >RCV>: :Amanda!replay@cpe-66-1-83-253.az.sprintbbd.net NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.045.5KB.10) .03128k/1.5m., .S:.041./.072./.123 .Q:.040./.072./.1210.] Trigger:.07 !replay
+$ 2003-07-09 01:29:33: >RCV>: :K-Meleon!kmel@p5086E180.dip0.t-ipconnect.de NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2350 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.049KB.10) .03128k/512k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !kmel
+$ 2003-07-09 01:29:33: >RCV>: :Mr_Mik!Mr_Mik@p5084B892.dip.t-dialin.net NOTICE ifsnopTS :I have.4 angelscd5 .on CD .12"angelscd5". with.12 2954 .files, and it is .3LOADED .Config: HCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.047.3KB.10) .03128k/768k., .S:.040./.071./.122 .Q:.040./.072./.1210.] Trigger:.07 !mik
+$ 2003-07-09 01:29:33: >RCV>: :Lucactus!lucactus@224-119.dialup.alkar.net NOTICE ifsnopTS :I have.4 angelscd5 .on CD .12"angelscd5". with.12 2954 .files, and it is .3LOADED .Config: HCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.042.3KB.10) .0333.6k/33.6k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !Lucactus
+$ 2003-07-09 01:29:33: >RCV>: :Breuki!Breuki@p50811AA6.dip.t-dialin.net NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.042.5KB.10) .03128k/768k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !karin
+$ 2003-07-09 01:29:33: >RCV>: :DenTikh!~dentikh@212.34.57.236 NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCP CSV: (.1325DCA508.3) ALS-Angels-CD05(Pre-Final)_2954.csv .[.10(.0414.7KB.10) .03128k/256k., .S:.040./.072./.126 .Q:.040./.072./.1210.] Trigger:.07 !DenTikh
+$ 2003-07-09 01:29:33: >RCV>: :OnlyMe__!Arthur@p508D5722.dip.t-dialin.net NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.046KB.10) .03128k/768k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !OnlyMe
+$ 2003-07-09 01:29:33: >RCV>: :AlsKnight!~skliz@ip-193-93.cbr.ru NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: HCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.0412.3KB.10) .03256k/256k., .S:.042./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !als
+$ 2003-07-09 01:29:33: >RCV>: :Axion!Axion_Nowh@dsl07527-dsl1.mtco.com NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.045.2KB.10) .03256k/256k., .S:.041./.071./.122 .Q:.040./.075./.1210.] Trigger:.07 !Axion
+$ 2003-07-09 01:29:33: >RCV>: :SandyD300!Gandalf@adsl-68-88-77-133.dsl.rcsntx.swbell.net NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.049.8KB.10) .03256k/1.5m., .S:.040./.071./.122 .Q:.040./.072./.125.] Trigger:.07 !sando
+$ 2003-07-09 01:29:33: >RCV>: :PiCollect!Duke@pD950EB34.dip.t-dialin.net NOTICE ifsnopTS :I have.4 angelscd5 .with.12 109 .files, but it is .4OFF .Config: RHC CSV: (.13555B8757.3) ALS-Angels-CD05_2697.csv .[.10(.040B.10) .03128k/768k., .S:.040./.072./.1210 .Q:.040./.072./.1210.] Trigger:.07 !PiCollect
+$ 2003-07-09 01:29:34: >RCV>: :Rapidler!rapidler@M119P021.dipool.highway.telekom.at NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RH CSV: (.13.3)  .[.10(.045.2KB.10) .0364k/64k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !SCR
+$ 2003-07-09 01:29:34: >RCV>: :RAF!RAF@213.8.120.50 NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.046.8KB.10) .031.5m/128k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !RAF
+$ 2003-07-09 01:29:34: >RCV>: :valen!~Valen_b4@MTL-HSE-ppp202810.qc.sympatico.ca NOTICE ifsnopTS :I have.4 angelscd5 .on CD .12"angelscd5". with.12 2954 .files, but it is .4NOT LOADED .Config: HCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.043.2KB.10) .03384k/1.5m., .S:.040./.071./.127 .Q:.040./.072./.1210.] Trigger:.07 !Valen_b4
+$ 2003-07-09 01:29:34: >RCV>: :Robot2!Robot2@ad11-m14.net.hinet.hr NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.043.7KB.10) .0364k/64k., .S:.040./.071./.124 .Q:.040./.072./.1210.] Trigger:.07 !robo
+$ 2003-07-09 01:29:34: >RCV>: :SmoothSlt!SmoothSlt@smooth.icehouse.net NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.045.8KB.10) .03128k/256k., .S:.042./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !slits
+$ 2003-07-09 01:29:34: >RCV>: :Banesto!Banesto@62.84.145.81 NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCP CSV: (.1325DCA508.3) ALS-Angels-CD05(Pre-Final)_2954.csv .[.10(.0433.4KB.10) .03T1/T1., .S:.040./.071./.124 .Q:.040./.072./.125.] Trigger:.07 !ban2
+$ 2003-07-09 01:29:34: >RCV>: :ati_fr!atiati@ANeuilly-101-1-2-245.w193-251.abo.wanadoo.fr NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.048.2KB.10) .03128k/512k., .S:.040./.072./.125 .Q:.040./.072./.1210.] Trigger:.07 !ati
+$ 2003-07-09 01:29:34: >RCV>: :ksauz!ksauz@ATuileries-111-1-3-208.w81-48.abo.wanadoo.fr NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2611 .files, and it is .3ON .Config: RHC CSV: (.1325DCA508.3) ALS-Angels-CD05_2954.csv .[.10(.045.5KB.10) .03128k/512k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !ksauz
+$ 2003-07-09 01:29:34: >RCV>: :Emp_Kuzco!Kuzco@pD9E833B6.dip.t-dialin.net NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCP CSV: (.1325DCA508.3) ALS-Angels-CD05(Pre-Final)_2954.csv .[.10(.046.7KB.10) .03128k/768k., .S:.041./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !kuzco
+$ 2003-07-09 01:29:35: >RCV>: :shawn8888!shawn8888@218.79.139.211 NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.045.7KB.10) .03512k/512k., .S:.040./.074./.1210 .Q:.040./.074./.1210.] Trigger:.07 !shawn
+$ 2003-07-09 01:29:35: >RCV>: :bukkinist!usr2@217.146.198.226 NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2977 .files, and it is .3ON .Config: RHC CSV: (.1325DCA508.3) ALS-Angels-CD05_2954.csv .[.10(.046.7KB.10) .03128k/128k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !bukkinist
+$ 2003-07-09 01:29:35: >RCV>: :galadhon!galadhon@BHE026021.res-com.wayinternet.com.br NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHC CSV: (.1325DCA508.3) ALS-Angels-CD05_2954.csv .[.10(.047.2KB.10) .03128k/256k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !galadhon
+$ 2003-07-09 01:29:35: >RCV>: :specdude!specdude@213.153.203.91 NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.042.5KB.10) .0364k/64k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !spec
+$ 2003-07-09 01:29:35: >RCV>: :DPS`!~diveny@218.88.104.109 NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.0472KB.10) .03256k/1.0m., .S:.040./.071./.122 .Q:.040./.072./.125.] Trigger:.07 !DPS
+$ 2003-07-09 01:29:35: >RCV>: :lado!lado@IP-233-91.TvNetWork.Hu NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.0414.8KB.10) .03416k/512k., .S:.041./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !lado
+$ 2003-07-09 01:29:36: >RCV>: :xr99_afk!Xray99@pcp03048217pcs.montvl01.pa.comcast.net NOTICE ifsnopTS :I have.4 angelscd5 .with.12 944 .files, and it is .3ON .Config: RHC CSV: (.13D5AAE368.3) ALS-Angels-2002-CD2_944.csv .[.10(.049.8KB.10) .03128k/256k., .S:.041./.071./.122 .Q:.040./.072./.125.] Trigger:.07 !xr
+$ 2003-07-09 01:29:38: >RCV>: :grzeszko!~grzeszko1@pb137.swiebodzice.sdi.tpnet.pl NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: RHCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.045KB.10) .03128k/128k., .S:.040./.072./.124 .Q:.040./.072./.1210.] Trigger:.07 !grzeszko
+$ 2003-07-09 01:29:55: >RCV>: :Sanclas!~sancl@centro.neoline.com.br QUIT :
+· 2003-07-09 01:29:55: DELETE FROM irc_users WHERE user = 'Sanclas'
+$ 2003-07-09 01:30:36: >RCV>: :a-Bob`afk!at0mic@c24.197.246.239.spt.wi.charter.com NOTICE ifsnopTS :I have.4 angelscd5 .with.12 2954 .files, and it is .3ON .Config: HCF CSV: (.1325DCA508.3) ALS-Angels-CD05(Final)_2954.csv .[.10(.047.1KB.10) .03256k/384k., .S:.044./.072./.124 .Q:.041./.074./.128.] Trigger:.07 !a-b

@@ -1,0 +1,3 @@
+* optimize report generation. if collection is complete, go directly to last part of csv-check.pl
+* check when a collection is marked as completed 
+* check when a file is marked/unmarked as completed (not very important)

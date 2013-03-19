@@ -1,0 +1,67 @@
+DROP DATABASE IF EXISTS rb;
+CREATE DATABASE rb;
+
+CREATE TABLE rb.users (
+    nick varchar (12),
+    hostmask varchar (128),
+    passwd varchar (13),
+    mode int
+);
+
+INSERT INTO rb.users VALUES('ifsnop', '*!*@*', 'tc2ATrHtAfMsk', 256);
+
+CREATE TABLE rb.csvs (
+    id int,
+    name varchar (64),
+    size int unsigned,
+    crc  varchar (8),
+    path varchar (64),
+    comment varchar (10),
+    owned int,
+    INDEX csvcheck (name, size, id, path)
+);
+
+CREATE TABLE rb.collections (
+    id int,
+    name varchar (64),
+    csvname varchar (64),
+    basepath varchar (64),
+    complete int,
+    active int,
+    INDEX csvcheck (id)
+);
+
+CREATE TABLE rb.oneliner (
+    id int NOT NULL,
+    texto blob NOT NULL,
+    ip varchar(15) NOT NULL,
+    user varchar(12) NOT NULL,
+    host varchar(64) NOT NULL,
+    alta timestamp(14) NOT NULL   
+);
+
+CREATE TABLE rb.irc_users (
+    channelid int NOT NULL,
+    user varchar(12) NOT NULL,
+    mode int DEFAULT 0
+);
+
+CREATE TABLE rb.trivial_temas (
+    id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    tema varchar(64) NOT NULL,
+    INDEX trivial_temas_index (id)
+);
+
+CREATE TABLE rb.trivial_preguntas (
+    id int NOT NULL PRIMARY KEY,
+    pregunta varchar(255) NOT NULL,
+    respuesta varchar(255) NOT NULL,
+    tema_id int NOT NULL,
+    alta timestamp(14) NOT NULL
+    INDEX trivial_preguntas_index (id)
+);
+
+GRANT INSERT, DELETE, SELECT, UPDATE, CREATE, DROP ON rb.* TO rb_user1@localhost IDENTIFIED BY 'rb_user1'; 
+UPDATE mysql.user SET Password=PASSWORD('rb_pass1') WHERE user='rb_user1';
+
+#;; END IROFFERTNG
